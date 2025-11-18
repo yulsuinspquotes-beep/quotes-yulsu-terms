@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Yulsu Insp Quotes</title>
+    <style>
+        :root {
+            --primary-color: #5d5fef;
+            --secondary-color: #ff6b6b;
+            --accent-color: #4ecdc4;
+            --light-color: #f8f9fa;
+            --dark-color: #2d3436;
+            --text-color: #333;
+            --border-radius: 8px;
+            --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            padding: 0;
+            margin: 0;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background-color: white;
+            padding: 1.5rem 0;
+            box-shadow: var(--box-shadow);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo span {
+            color: var(--secondary-color);
+        }
+        
+        .logo-icon {
+            margin-right: 10px;
+            font-size: 2rem;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin-left: 1.5rem;
+        }
+        
+        nav ul li a {
+            color: var(--dark-color);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+            padding: 5px 10px;
+            border-radius: 4px;
+        }
+        
+        nav ul li a:hover {
+            color: var(--primary-color);
+            background-color: rgba(93, 95, 239, 0.1);
+        }
+        
+        .language-switcher {
+            margin-left: 1.5rem;
+        }
+        
+        .language-switcher a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+            padding: 5px 10px;
+            border-radius: 4px;
+            border: 1px solid var(--primary-color);
+            transition: all 0.3s;
+        }
+        
+        .language-switcher a:hover {
+            background-color: var(--primary-color);
+            color: white;
+        }
+        
+        .hero {
+            background: linear-gradient(135deg, var(--primary-color), #8a2be2);
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+            margin-bottom: 3rem;
+            border-radius: 0 0 30px 30px;
+        }
+        
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto;
+            opacity: 0.9;
+        }
+        
+        .content {
+            background-color: white;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            padding: 3rem;
+            margin-bottom: 3rem;
+        }
+        
+        .last-updated {
+            background-color: var(--light-color);
+            padding: 1rem;
+            border-radius: var(--border-radius);
+            margin-bottom: 2rem;
+            border-left: 4px solid var(--accent-color);
+        }
+        
+        h2 {
+            color: var(--primary-color);
+            margin: 2rem 0 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid #eee;
+        }
+        
+        h2:first-of-type {
+            margin-top: 0;
+        }
+        
+        h3 {
+            color: var(--secondary-color);
+            margin: 1.5rem 0 0.5rem;
+        }
+        
+        p {
+            margin-bottom: 1rem;
+        }
+        
+        ul, ol {
+            margin-bottom: 1rem;
+            padding-left: 1.5rem;
+        }
+        
+        li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .highlight {
+            background-color: var(--light-color);
+            padding: 1.5rem;
+            border-radius: var(--border-radius);
+            margin: 1.5rem 0;
+            border-left: 4px solid var(--accent-color);
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+        }
+        
+        th, td {
+            padding: 0.75rem;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        th {
+            background-color: var(--light-color);
+            color: var(--primary-color);
+        }
+        
+        footer {
+            background-color: var(--dark-color);
+            color: white;
+            padding: 3rem 0;
+            border-radius: 30px 30px 0 0;
+        }
+        
+        .footer-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        
+        .footer-section {
+            flex: 1;
+            min-width: 250px;
+            margin-bottom: 1.5rem;
+        }
+        
+        .footer-section h3 {
+            color: white;
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+        
+        .footer-section ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .footer-section ul li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .footer-section a {
+            color: #ddd;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-section a:hover {
+            color: var(--accent-color);
+        }
+        
+        .copyright {
+            text-align: center;
+            margin-top: 2rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid #555;
+        }
+        
+        .back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: var(--primary-color);
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            box-shadow: var(--box-shadow);
+            transition: all 0.3s;
+            z-index: 1000;
+            opacity: 0;
+            visibility: hidden;
+        }
+        
+        .back-to-top.show {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .back-to-top:hover {
+            background-color: var(--secondary-color);
+            transform: translateY(-3px);
+        }
+        
+        .quote-box {
+            background: linear-gradient(135deg, var(--accent-color), #56cc9d);
+            color: white;
+            padding: 1.5rem;
+            border-radius: var(--border-radius);
+            margin: 2rem 0;
+            text-align: center;
+            font-style: italic;
+        }
+        
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            nav ul {
+                margin-top: 1rem;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+            
+            nav ul li {
+                margin: 0.5rem;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .content {
+                padding: 2rem;
+            }
+            
+            .footer-section {
+                flex: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">💭</div>
+                    <div>Yulsu<span>Insp Quotes</span></div>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="https://yulsuinspquotes-beep.github.io/quotes-yulsu-terms/terms.html">Terms & Conditions</a></li>
+                        <li><a href="#" class="active">Privacy Policy</a></li>
+                        <li class="language-switcher"><a href="https://yulsuinspquotes-beep.github.io/quotes-yulsu-terms/privacy-es.html">Español</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Privacy Policy</h1>
+            <p>Your privacy matters to us. This policy explains what data we collect and how we use it.</p>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="content">
+            <div class="last-updated">
+                <p><strong>Last Updated:</strong> November 18, 2025</p>
+            </div>
+
+            <div class="quote-box">
+                "Privacy is not something to be taken lightly. At Yulsu Insp Quotes, we value your trust and are committed to protecting your information."
+            </div>
+
+            <h2>1. Introduction</h2>
+            <p>At Yulsu Insp Quotes, we respect your privacy and are committed to protecting any information we may collect while you use our application. This Privacy Policy describes our practices regarding the information we collect when you use Yulsu Insp Quotes.</p>
+            <p>By using our application, you agree to the practices described in this policy. We recommend reading this document carefully to understand our privacy practices.</p>
+
+            <h2>2. Information We Collect</h2>
+            <p>Yulsu Insp Quotes is designed to provide inspirational quotes without requiring personally identifiable information. However, we collect certain non-personal data to improve your experience:</p>
+            
+            <h3>2.1. Usage Data and Preferences</h3>
+            <ul>
+                <li>Display preferences (light/dark theme, font size)</li>
+                <li>Favorite quotes you've saved</li>
+                <li>Interactions with the application (shared quotes, etc.)</li>
+                <li>Performance and error data to improve stability</li>
+            </ul>
+            
+            <h3>2.2. Technical Information</h3>
+            <ul>
+                <li>Device type and operating system</li>
+                <li>Application version</li>
+                <li>Language and regional settings</li>
+                <li>Anonymous usage data for analytics</li>
+            </ul>
+            
+            <div class="highlight">
+                <p><strong>Important note:</strong> Yulsu Insp Quotes does not intentionally collect personally identifiable information such as name, email address, physical address, or phone number. All information collected is anonymous and cannot be used to personally identify you.</p>
+            </div>
+
+            <h2>3. How We Use Your Information</h2>
+            <p>We use the collected information for the following purposes:</p>
+            <ul>
+                <li>Personalize your experience based on your saved preferences</li>
+                <li>Improve application functionality and performance</li>
+                <li>Analyze usage patterns to enhance our services</li>
+                <li>Develop new features and functionalities</li>
+                <li>Troubleshoot technical issues and errors</li>
+                <li>Perform statistical analysis on application usage</li>
+            </ul>
+
+            <h2>4. Legal Basis for Processing</h2>
+            <p>We process your information based on the following legal grounds:</p>
+            <ul>
+                <li><strong>Legitimate Interest:</strong> We have a legitimate interest in improving our application and providing the best possible experience to our users.</li>
+                <li><strong>Consent:</strong> For certain optional functionalities, we may request your explicit consent.</li>
+            </ul>
+
+            <h2>5. Information Sharing</h2>
+            <p>We do not sell, trade, or transfer your information to third parties, except in the following circumstances:</p>
+            <ul>
+                <li>With service providers who help us operate and analyze the use of our application (such as anonymous analytics services)</li>
+                <li>When necessary to comply with the law or protect rights</li>
+                <li>In connection with a merger, acquisition, or sale of assets</li>
+            </ul>
+            <p>All third parties with whom we share information are required to maintain the confidentiality and security of the data.</p>
+
+            <h2>6. Data Storage and Security</h2>
+            <p>The collected information is stored locally on your device and, in some cases, anonymously on our servers. We implement appropriate technical and organizational security measures to protect this information against unauthorized access, alteration, disclosure, or destruction.</p>
+
+            <h2>7. Data Retention</h2>
+            <p>We retain collected information only for as long as necessary to fulfill the purposes described in this policy. Data stored locally on your device will remain there until you decide to delete it or uninstall the application.</p>
+
+            <h2>8. Your Rights</h2>
+            <p>In accordance with applicable legislation, you have the following rights regarding your data:</p>
+            <table>
+                <tr>
+                    <th>Right</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>Access</td>
+                    <td>You can request information about the data we have about you.</td>
+                </tr>
+                <tr>
+                    <td>Rectification</td>
+                    <td>You can update or correct your preferences at any time from the application.</td>
+                </tr>
+                <tr>
+                    <td>Erasure</td>
+                    <td>You can delete all local data by uninstalling the application.</td>
+                </tr>
+                <tr>
+                    <td>Portability</td>
+                    <td>You can request a copy of your data in a readable format.</td>
+                </tr>
+                <tr>
+                    <td>Objection</td>
+                    <td>You can object to the processing of your data in certain circumstances.</td>
+                </tr>
+            </table>
+
+            <h2>9. Cookies and Similar Technologies</h2>
+            <p>Yulsu Insp Quotes may use cookie-like technologies to store preferences and usage data. These are used exclusively to improve your experience and are not shared with third parties without your consent.</p>
+
+            <h2>10. Changes to This Policy</h2>
+            <p>We may update our Privacy Policy periodically. We will notify you of any significant changes by posting the new policy on this page and updating the "Last Updated" date.</p>
+            <p>We recommend reviewing this Privacy Policy periodically to stay informed about how we protect your information.</p>
+
+            <h2>11. Contact</h2>
+            <p>If you have questions about this Privacy Policy or about the processing of your data, you can contact us through:</p>
+            <ul>
+                <li><strong>Email:</strong> yulsu.inspquotes@gmail.com</li>
+                <li><strong>Contact form:</strong> Available in the application</li>
+            </ul>
+            <p>You also have the right to file a complaint with the competent data protection authority if you believe that the processing of your data violates applicable legislation.</p>
+
+            <div class="quote-box">
+                "Your daily inspiration shouldn't cost you your privacy. At Yulsu Insp Quotes, we're committed to both."
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Yulsu Insp Quotes</h3>
+                    <p>Your daily source of inspiration and motivation. Carefully selected quotes to brighten your day.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="https://yulsuinspquotes-beep.github.io/quotes-yulsu-terms/terms.html">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Download the App</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li>Email: yulsu.inspquotes@gmail.com</li>
+                        
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Yulsu Insp Quotes. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#" class="back-to-top">↑</a>
+
+    <script>
+        // Smooth scroll for internal links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Show/hide "Back to top" button
+        window.addEventListener('scroll', function() {
+            const backToTopButton = document.querySelector('.back-to-top');
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.add('show');
+            } else {
+                backToTopButton.classList.remove('show');
+            }
+        });
+
+        // Update copyright year
+        document.addEventListener('DOMContentLoaded', function() {
+            const year = new Date().getFullYear();
+            const copyrightElement = document.querySelector('.copyright p');
+            if (copyrightElement) {
+                copyrightElement.innerHTML = `&copy; ${year} Yulsu Insp Quotes. All rights reserved.`;
+            }
+        });
+    </script>
+</body>
+</html>
